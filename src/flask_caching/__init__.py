@@ -62,7 +62,7 @@ class CachedResponse(Response):
 
     timeout = None
 
-    def __init__(self, response, timeout):
+    def __init__(self, response, timeout) -> None:
         self.__dict__ = response.__dict__
         self.timeout = timeout
 
